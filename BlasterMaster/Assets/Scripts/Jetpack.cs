@@ -10,7 +10,7 @@ public class Jetpack : MonoBehaviour
     protected CharacterController Controller;
 
 	/// <summary>
-    /// Calling before start.
+    /// Get the character controller script.
     /// </summary>
     private void Awake()
     {
@@ -19,7 +19,7 @@ public class Jetpack : MonoBehaviour
     }
 
     /// <summary>
-    /// Calling per frame.
+    /// Jetpack logic.
     /// </summary>
     private void Update()
     {        
