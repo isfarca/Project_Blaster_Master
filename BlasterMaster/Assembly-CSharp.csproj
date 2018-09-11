@@ -61,6 +61,8 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\Gaze Filling Slider LITE\Scripts\Fill_On_Gaze.cs" />
+    <Compile Include="Assets\Gaze Filling Slider LITE\Scripts\Gaze_Interaction_Input_Module.cs" />
     <Compile Include="Assets\Oculus\AudioManager\Scenes\Scripts\TestScript.cs" />
     <Compile Include="Assets\Oculus\AudioManager\Scripts\Audio\AmbienceEmitter.cs" />
     <Compile Include="Assets\Oculus\AudioManager\Scripts\Audio\AudioManager.cs" />
@@ -288,6 +290,10 @@
     <Compile Include="Assets\Oculus\VR\Scripts\Util\OVRWaitCursor.cs" />
     <Compile Include="Assets\Scripts\Grabber.cs" />
     <Compile Include="Assets\Scripts\Jetpack.cs" />
+    <Compile Include="Assets\Scripts\LevelLoader.cs" />
+    <Compile Include="Assets\Scripts\MainMenu.cs" />
+    <Compile Include="Assets\Scripts\Point.cs" />
+    <Compile Include="Assets\Scripts\Signpost.cs" />
     <None Include="Assets\Oculus\Avatar\Resources\Materials\Version1.5\Avatar_PC_SingleComponent.shader" />
     <None Include="Assets\Oculus\VR\Resources\OVRMRUnlitTransparent.shader" />
     <None Include="Assets\Oculus\VR\Resources\OVRMRChromaKey.cginc" />

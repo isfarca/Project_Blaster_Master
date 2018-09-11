@@ -22,12 +22,12 @@ public class Jetpack : MonoBehaviour
     /// Jetpack logic.
     /// </summary>
     private void Update()
-    {        
+    {
         // Movement in space.
-        if (OVRInput.Get(OVRInput.Button.Three)) // Left jetpack.
-            _moveForceLeft += (_comparisonTransform.position - _leftHandAnchorTransform.position) / 80;
-        else if (OVRInput.Get(OVRInput.Button.One)) // Right jetpack.
-            _moveForceRight += (_comparisonTransform.position - _rightHandAnchorTransform.position) / 80;
+        if (OVRInput.Get(OVRInput.Button.PrimaryIndexTrigger)) // Left jetpack.
+            _moveForceLeft += (_comparisonTransform.position - _leftHandAnchorTransform.position) / 160;
+        else if (OVRInput.Get(OVRInput.Button.SecondaryIndexTrigger)) // Right jetpack.
+            _moveForceRight += (_comparisonTransform.position - _rightHandAnchorTransform.position) / 160;
 
         // Set move force.
         _moveForce = _moveForceLeft + _moveForceRight;
@@ -35,7 +35,7 @@ public class Jetpack : MonoBehaviour
         // Move the player with move force values.
         Controller.Move(_moveForce);
 
-        // 0.5 per cent lost movement speed.
+        // 0.2 per cent lost movement speed.
         _moveForceLeft *= 0.995f;
         _moveForceRight *= 0.995f;
     }
