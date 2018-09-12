@@ -6,11 +6,16 @@ using UnityEngine.UI;
 public class LevelLoader : MonoBehaviour
 {
     // Declare variables.
+    [SerializeField] private GameObject[] _fillOnGazeSlider;
     [SerializeField] private Slider _loadingSlider;
     [SerializeField] private Text _progressText;
 
+    /// <summary>
+    /// Deactivate the game objects, that you do not need for the beginning.
+    /// </summary>
     private void Start()
     {
+        // Disable the loading bar.
         _loadingSlider.gameObject.SetActive(false);
     }
 
@@ -24,8 +29,14 @@ public class LevelLoader : MonoBehaviour
         // Declare variables.
         AsyncOperation async = SceneManager.LoadSceneAsync(level);
 
+        // Disable the interactable of buttons while level charging.
+        foreach (GameObject currentSlider in _fillOnGazeSlider)
+            currentSlider.gameObject.SetActive(false);
+
+        // Loading slider it can be see.
         _loadingSlider.gameObject.SetActive(true);
 
+        // Level charging.
         while (!async.isDone)
         {
             float progress = Mathf.Clamp01(async.progress / 0.9f);
@@ -36,6 +47,7 @@ public class LevelLoader : MonoBehaviour
             yield return null;
         }
 
+        // Stop level charging and go to level.
         StopAllCoroutines();
     }
 }

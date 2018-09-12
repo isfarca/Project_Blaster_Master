@@ -9,6 +9,8 @@ public class Grabber : MonoBehaviour
     [SerializeField] private Transform _rightHandAnchorTransform;
     [SerializeField] private Transform _level;
     private Rigidbody _rigidbody;
+    private int _rotationCount;
+    private bool _isRotate;
 
     /// <summary>
     /// Get the references.
@@ -26,7 +28,10 @@ public class Grabber : MonoBehaviour
     private void Start()
     {
         // Disable particle.
-        transform.GetChild(0).gameObject.SetActive(false);
+        transform.GetChild(0).GetChild(0).gameObject.SetActive(false);
+
+        _rotationCount = 0;
+        _isRotate = false;
     }
 
     /// <summary>
@@ -36,7 +41,7 @@ public class Grabber : MonoBehaviour
     private void OnTriggerEnter(Collider other)
     {
         if (other.gameObject.CompareTag("Player"))
-            transform.GetChild(0).gameObject.SetActive(true);
+            transform.GetChild(0).GetChild(0).gameObject.SetActive(true);
     }
 
     /// <summary>
@@ -53,7 +58,7 @@ public class Grabber : MonoBehaviour
         if (_ovrGrabbableScript.isGrabbed)
         {
             // Disable particle.
-            transform.GetChild(0).gameObject.SetActive(false);
+            transform.GetChild(0).GetChild(0).gameObject.SetActive(false);
 
             // Disable physics to counteract the trample effect.
             _rigidbody.isKinematic = true;
@@ -63,11 +68,17 @@ public class Grabber : MonoBehaviour
             {
                 transform.position = _leftHandAnchorTransform.position;
                 transform.parent = _leftHandAnchorTransform;
+
+                _isRotate = _rotationCount > 0 ? false : true;
+                _rotationCount = _rotationCount == 0 ? 1 : 1;
             }
             else if (OVRInput.Get(OVRInput.Button.SecondaryHandTrigger))
             {
                 transform.position = _rightHandAnchorTransform.position;
                 transform.parent = _rightHandAnchorTransform;
+
+                _isRotate = _rotationCount > 0 ? false : true;
+                _rotationCount = _rotationCount == 0 ? 1 : 1;
             }
         }
         else // When a player not grabbed, than enable physics, parent this object to the child object of the level and enable particle.
@@ -76,12 +87,19 @@ public class Grabber : MonoBehaviour
 
             transform.parent = _level;
 
-            transform.GetChild(0).gameObject.SetActive(true);
+            transform.GetChild(0).GetChild(0).gameObject.SetActive(true);
+
+            _isRotate = false;
+            _rotationCount = 0;
         }
+
+        // Set zero rotation.
+        if (_isRotate)
+            transform.rotation = Quaternion.identity;
 
         // Rotate the particle equal headset.
         Quaternion angles = InputTracking.GetLocalRotation(XRNode.CenterEye);
-        transform.GetChild(0).rotation = Quaternion.Euler(angles.eulerAngles.x, angles.eulerAngles.y, angles.eulerAngles.z);
+        transform.GetChild(0).GetChild(0).rotation = Quaternion.Euler(angles.eulerAngles.x, angles.eulerAngles.y, angles.eulerAngles.z);
     }
 
     /// <summary>
@@ -91,6 +109,6 @@ public class Grabber : MonoBehaviour
     private void OnTriggerExit(Collider other)
     {
         if (other.gameObject.CompareTag("Player"))
-            transform.GetChild(0).gameObject.SetActive(false);
+            transform.GetChild(0).GetChild(0).gameObject.SetActive(false);
     }
 }
