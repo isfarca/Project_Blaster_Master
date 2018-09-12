@@ -1,0 +1,156 @@
+fileFormatVersion: 2
+guid: 235f86baf17759947a8d9516c87479f2
+ModelImporter:
+  serializedVersion: 22
+  fileIDToRecycleName:
+    100000: Base.001
+    100002: BottomLampsLeft.000
+    100004: BottomLampsLeft.001
+    100006: Cylinder
+    100008: //RootNode
+    400000: Base.001
+    400002: BottomLampsLeft.000
+    400004: BottomLampsLeft.001
+    400006: Cylinder
+    400008: //RootNode
+    2100000: Pipes
+    2100002: BottomLampholder.001
+    2100004: BottomLamp.001
+    2100006: Floor
+    2100008: Ceiling
+    2100010: Tunnel
+    2100012: Wall
+    2100014: Lamp
+    2300000: Base.001
+    2300002: BottomLampsLeft.000
+    2300004: BottomLampsLeft.001
+    2300006: Cylinder
+    3300000: Base.001
+    3300002: BottomLampsLeft.000
+    3300004: BottomLampsLeft.001
+    3300006: Cylinder
+    4300000: Cylinder
+    4300002: BottomLampsLeft.000
+    4300004: Base.001
+    4300006: BottomLampsLeft.001
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: BottomLamp.001
+    second: {fileID: 2100000, guid: 2c1a164f84502cc46b2ef415f7f0906c, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: BottomLampholder.001
+    second: {fileID: 2100000, guid: 6d054057bd2d5f4479258abb416cc135, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Ceiling
+    second: {fileID: 2100000, guid: 7c8225c9e8554b042abb818f0c246eba, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Floor
+    second: {fileID: 2100000, guid: 679a7181471ab294cb503fdad180cbf5, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Lamp
+    second: {fileID: 2100000, guid: f28cb4caa6071394d858da359b61a7cc, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Pipes
+    second: {fileID: 2100000, guid: 601ba48901d5e09489a8189515baaf69, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Tunnel
+    second: {fileID: 2100000, guid: d1dec49fa43a67d42bbc48e9dc1ea153, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Wall
+    second: {fileID: 2100000, guid: ebda693c39b631f439a00a2fdf3808a3, type: 2}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
