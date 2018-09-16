@@ -23,7 +23,7 @@ public class Signpost : MonoBehaviour
     /// </summary>
     private void FixedUpdate()
     {
-        // Prevemnt the out of range from index the sign post array.
+        // Prevent the out of range from index the sign post array.
         if (_pointsIndex > _points.Length - 1)
             return;
 

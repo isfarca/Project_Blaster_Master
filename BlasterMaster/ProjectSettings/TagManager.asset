@@ -5,8 +5,12 @@ TagManager:
   serializedVersion: 2
   tags:
   - Signpost
-  - Storable
-  - Broke
+  - Destructible
+  - Usable
+  - Key1
+  - Key2
+  - Lock1
+  - Lock2
   layers:
   - Default
   - TransparentFX

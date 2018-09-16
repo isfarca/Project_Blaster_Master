@@ -29,7 +29,7 @@ public class LevelLoader : MonoBehaviour
         // Declare variables.
         AsyncOperation async = SceneManager.LoadSceneAsync(level);
 
-        // Disable the interactable of buttons while level charging.
+        // Disable all buttons by level charging.
         foreach (GameObject currentSlider in _fillOnGazeSlider)
             currentSlider.gameObject.SetActive(false);
 

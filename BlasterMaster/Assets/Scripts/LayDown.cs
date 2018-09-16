@@ -6,22 +6,22 @@ public class LayDown : MonoBehaviour
     [SerializeField] private Transform _offset;
 
     /// <summary>
-    /// Storable game object.
+    /// Usable game object.
     /// </summary>
-    /// <param name="other">Game object with storable tag.</param>
+    /// <param name="other">Game object with usable tag.</param>
     private void OnTriggerStay(Collider other)
     {
-        // The game object match, then continue storable logic.
-        if (gameObject.CompareTag("Storable") != other.gameObject.CompareTag("Storable"))
+        // The game object match, then continue usable logic.
+        if (!other.gameObject.CompareTag("Usable"))
             return;
 
-        // If no grab button pressed, than storable game object.
-        if (!OVRInput.Get(OVRInput.Button.PrimaryHandTrigger) || !OVRInput.Get(OVRInput.Button.SecondaryHandTrigger))
-        {
-            other.GetComponent<Rigidbody>().isKinematic = true;
-            other.transform.position = _offset.position;
-            other.transform.rotation = Quaternion.identity;
-            other.transform.parent = transform;
-        }
+        // If no grab button pressed, than usable game object.
+        if (OVRInput.Get(OVRInput.Button.PrimaryHandTrigger) || OVRInput.Get(OVRInput.Button.SecondaryHandTrigger)) 
+            return;
+        
+        other.GetComponent<Rigidbody>().isKinematic = true;
+        other.transform.position = _offset.position;
+        other.transform.rotation = Quaternion.identity;
+        other.transform.parent = transform;
     }
 }

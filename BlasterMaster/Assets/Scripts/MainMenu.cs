@@ -4,7 +4,7 @@ public class MainMenu : MonoBehaviour
 {
     // Declare variables.
     private bool _vibrationActive, _rotationActive;
-    [SerializeField] private GameObject _onOffCheckmark;
+    [SerializeField] private GameObject _onOff;
     [SerializeField] private LevelLoader _levelLoaderScript;
 
     /// <summary>
@@ -40,12 +40,12 @@ public class MainMenu : MonoBehaviour
     }
 
     /// <summary>
-    /// Toggle haptic feedback.
+    /// Toggle feedback.
     /// </summary>
     public void SetVibration()
     {
-        _vibrationActive = _vibrationActive ? false : true;
-        _onOffCheckmark.gameObject.SetActive(_vibrationActive);
+        _vibrationActive = !_vibrationActive;
+        _onOff.gameObject.SetActive(_vibrationActive);
     }
 
     /// <summary>
@@ -53,7 +53,7 @@ public class MainMenu : MonoBehaviour
     /// </summary>
     public void SetRotation()
     {
-        _rotationActive = _rotationActive ? false : true;
-        _onOffCheckmark.gameObject.SetActive(_rotationActive);
+        _rotationActive = !_rotationActive;
+        _onOff.gameObject.SetActive(_rotationActive);
     }
 }

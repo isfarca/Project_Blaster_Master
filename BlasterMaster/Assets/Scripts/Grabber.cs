@@ -4,11 +4,11 @@ using UnityEngine.XR;
 public class Grabber : MonoBehaviour
 {
     // Declare variables.
-    private OVRGrabbable _ovrGrabbableScript;
+    private OVRGrabbable _pluginGrabScript;
     [SerializeField] private Transform _leftHandAnchorTransform;
     [SerializeField] private Transform _rightHandAnchorTransform;
     [SerializeField] private Transform _level;
-    private Rigidbody _rigidbody;
+    private Rigidbody _physic;
     private int _rotationCount;
     private bool _isRotate;
 
@@ -18,8 +18,8 @@ public class Grabber : MonoBehaviour
     private void Awake()
     {
         // Get the various components.
-        _ovrGrabbableScript = GetComponent<OVRGrabbable>();
-        _rigidbody = GetComponent<Rigidbody>();
+        _pluginGrabScript = GetComponent<OVRGrabbable>();
+        _physic = GetComponent<Rigidbody>();
     }
 
     /// <summary>
@@ -55,13 +55,13 @@ public class Grabber : MonoBehaviour
             return;
 
         // When a player grabbed, than set the position of this object equal hand.
-        if (_ovrGrabbableScript.isGrabbed)
+        if (_pluginGrabScript.isGrabbed)
         {
             // Disable particle.
             transform.GetChild(0).GetChild(0).gameObject.SetActive(false);
 
             // Disable physics to counteract the trample effect.
-            _rigidbody.isKinematic = true;
+            _physic.isKinematic = true;
 
             // When a player triggered a hand trigger button, than set the position of this object equal current hand and parent this object to the child object of the hand.
             if (OVRInput.Get(OVRInput.Button.PrimaryHandTrigger))
@@ -69,21 +69,21 @@ public class Grabber : MonoBehaviour
                 transform.position = _leftHandAnchorTransform.position;
                 transform.parent = _leftHandAnchorTransform;
 
-                _isRotate = _rotationCount > 0 ? false : true;
-                _rotationCount = _rotationCount == 0 ? 1 : 1;
+                _isRotate = _rotationCount <= 0;
+                _rotationCount = 1;
             }
             else if (OVRInput.Get(OVRInput.Button.SecondaryHandTrigger))
             {
                 transform.position = _rightHandAnchorTransform.position;
                 transform.parent = _rightHandAnchorTransform;
 
-                _isRotate = _rotationCount > 0 ? false : true;
-                _rotationCount = _rotationCount == 0 ? 1 : 1;
+                _isRotate = _rotationCount <= 0;
+                _rotationCount = 1;
             }
         }
         else // When a player not grabbed, than enable physics, parent this object to the child object of the level and enable particle.
         {
-            _rigidbody.isKinematic = false;
+            _physic.isKinematic = false;
 
             transform.parent = _level;
 
