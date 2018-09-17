@@ -4,6 +4,17 @@ public class LayDown : MonoBehaviour
 {
     // Declare variables.
     [SerializeField] private Transform _offset;
+    private Feedback _feedbackScriptLeft, _feedbackScriptRight;
+
+    /// <summary>
+    /// Get the references.
+    /// </summary>
+    private void Awake()
+    {
+        // Get the scripts by name in hierarchy.
+        _feedbackScriptLeft = GameObject.Find("FeedbackLeft").GetComponent<Feedback>();
+        _feedbackScriptRight = GameObject.Find("FeedbackRight").GetComponent<Feedback>();
+    }
 
     /// <summary>
     /// Usable game object.
@@ -23,5 +34,10 @@ public class LayDown : MonoBehaviour
         other.transform.position = _offset.position;
         other.transform.rotation = Quaternion.identity;
         other.transform.parent = transform;
+
+        _feedbackScriptLeft.Vibrate(VibrationForce.Hard);
+        _feedbackScriptRight.Vibrate(VibrationForce.Hard);
+
+        Destroy(this);
     }
 }

@@ -7,10 +7,7 @@ TagManager:
   - Signpost
   - Destructible
   - Usable
-  - Key1
-  - Key2
-  - Lock1
-  - Lock2
+  - Key
   layers:
   - Default
   - TransparentFX
