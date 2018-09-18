@@ -1,0 +1,298 @@
+fileFormatVersion: 2
+guid: 61c243bd0e2d9a24ebc91ddca8410c5a
+ModelImporter:
+  serializedVersion: 22
+  fileIDToRecycleName:
+    100000: Camera
+    100002: Cylinder
+    100004: Cylinder.001
+    100006: Cylinder.002
+    100008: Cylinder.003
+    100010: Cylinder.004
+    100012: Cylinder.005
+    100014: Cylinder.006
+    100016: Cylinder.008
+    100018: Plane
+    100020: Sun
+    100022: //RootNode
+    100024: Base
+    100026: BottomLampsLeft
+    100028: BottomLampsRight
+    100030: PipeCenter
+    100032: PipeFurtherLeft
+    100034: PipeFurtherRight
+    100036: PipeLeft
+    100038: PipeRight
+    100040: Windows
+    400000: Camera
+    400002: Cylinder
+    400004: Cylinder.001
+    400006: Cylinder.002
+    400008: Cylinder.003
+    400010: Cylinder.004
+    400012: Cylinder.005
+    400014: Cylinder.006
+    400016: Cylinder.008
+    400018: Plane
+    400020: Sun
+    400022: //RootNode
+    400024: Base
+    400026: BottomLampsLeft
+    400028: BottomLampsRight
+    400030: PipeCenter
+    400032: PipeFurtherLeft
+    400034: PipeFurtherRight
+    400036: PipeLeft
+    400038: PipeRight
+    400040: Windows
+    2000000: Camera
+    2100000: Material.003
+    2100002: Material.005
+    2100004: Material.007
+    2100006: Material.006
+    2100008: Material.004
+    2100010: Material.001
+    2100012: Material.002
+    2100014: Tunnel
+    2100016: Ceiling
+    2100018: Lamp
+    2100020: WindowFrame
+    2100022: WindowGlass
+    2100024: Pipe2
+    2100026: Pipe3
+    2100028: Pipe1
+    2100030: BottomLampholder
+    2100032: BottomLamp
+    2100034: Material
+    2100036: Wall
+    2300000: Cylinder
+    2300002: Cylinder.001
+    2300004: Cylinder.002
+    2300006: Cylinder.003
+    2300008: Cylinder.004
+    2300010: Cylinder.005
+    2300012: Cylinder.006
+    2300014: Cylinder.008
+    2300016: Plane
+    2300018: Base
+    2300020: BottomLampsLeft
+    2300022: BottomLampsRight
+    2300024: PipeCenter
+    2300026: PipeFurtherLeft
+    2300028: PipeFurtherRight
+    2300030: PipeLeft
+    2300032: PipeRight
+    2300034: Windows
+    3300000: Cylinder
+    3300002: Cylinder.001
+    3300004: Cylinder.002
+    3300006: Cylinder.003
+    3300008: Cylinder.004
+    3300010: Cylinder.005
+    3300012: Cylinder.006
+    3300014: Cylinder.008
+    3300016: Plane
+    3300018: Base
+    3300020: BottomLampsLeft
+    3300022: BottomLampsRight
+    3300024: PipeCenter
+    3300026: PipeFurtherLeft
+    3300028: PipeFurtherRight
+    3300030: PipeLeft
+    3300032: PipeRight
+    3300034: Windows
+    4300000: Cylinder.008
+    4300002: Cylinder.006
+    4300004: Cylinder.005
+    4300006: Cylinder.004
+    4300008: Cylinder.002
+    4300010: Cylinder.003
+    4300012: Cylinder.001
+    4300014: Cylinder
+    4300016: Plane
+    4300018: Windows
+    4300020: PipeLeft
+    4300022: PipeRight
+    4300024: PipeCenter
+    4300026: PipeFurtherRight
+    4300028: PipeFurtherLeft
+    4300030: BottomLampsRight
+    4300032: BottomLampsLeft
+    4300034: Base
+    10800000: Sun
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: BottomLamp
+    second: {fileID: 2100000, guid: 7223d894e8fab3c409e39ceaf29b424c, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: BottomLampholder
+    second: {fileID: 2100000, guid: 248b6cd637a9f8b40aaa9160e5827a9e, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Ceiling
+    second: {fileID: 2100000, guid: e6f9aa7d8a4f9424d9bf535343aa7beb, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Lamp
+    second: {fileID: 2100000, guid: 255a928f8c9c49d4ba5ada6018a9cff0, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Material
+    second: {fileID: 2100000, guid: d1d232b84459eb440b8cca40dffc2dd8, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Material.001
+    second: {fileID: 2100000, guid: d928a75c79e82f243a3b4bea2663dcd3, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Material.002
+    second: {fileID: 2100000, guid: ba04c59afdbc0ce488b3a27f11a6942e, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Material.003
+    second: {fileID: 2100000, guid: 5822ca1dc4ec9104c9642412794a23ab, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Material.004
+    second: {fileID: 2100000, guid: 7774144ee642fa24aa4166721f4896ed, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Material.005
+    second: {fileID: 2100000, guid: 18fa10174dbb1ac4eb9707f2ff0d3d59, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Material.006
+    second: {fileID: 2100000, guid: 1033da763a7bea841b3dcbb25ab61de8, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Material.007
+    second: {fileID: 2100000, guid: 77fe3d2859284fa478546993684d8bd7, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Pipe1
+    second: {fileID: 2100000, guid: 81bc0e934a7fbf0439c8a31313e1861a, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Pipe2
+    second: {fileID: 2100000, guid: 2baa2e43fa28df84d95441d0a6cbc43e, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Pipe3
+    second: {fileID: 2100000, guid: 342b5da697e28eb40b8db81fe34c8a6f, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Tunnel
+    second: {fileID: 2100000, guid: ea425b80952ecf44d9361f53be4dfb49, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Wall
+    second: {fileID: 2100000, guid: c238efcc73d4cdd4abef4d744a6e6eb4, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: WindowFrame
+    second: {fileID: 2100000, guid: 65b11abba086a514a857cd8d8aefda9a, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: WindowGlass
+    second: {fileID: 2100000, guid: d19e33d8b5349be478b9d87202b1641d, type: 2}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

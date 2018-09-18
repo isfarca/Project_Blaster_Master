@@ -401,14 +401,21 @@
         <e p="Scripts" t="Include">
           <e p="Destructor.cs" t="Include" />
           <e p="Door.cs" t="Include" />
+          <e p="Effects" t="Include">
+            <e p="FlickeringEmission.cs" t="Include" />
+            <e p="FlickeringLight.cs" t="Include" />
+            <e p="RotatingLight.cs" t="Include" />
+          </e>
+          <e p="Endpoint.cs" t="Include" />
           <e p="Feedback.cs" t="Include" />
           <e p="Grabber.cs" t="Include" />
+          <e p="Hand.cs" t="Include" />
           <e p="LayDown.cs" t="Include" />
           <e p="LevelLoader.cs" t="Include" />
+          <e p="Lever.cs" t="Include" />
           <e p="Lock.cs" t="Include" />
           <e p="MainMenu.cs" t="Include" />
           <e p="Movement.cs" t="Include" />
-          <e p="Player.cs" t="Include" />
           <e p="Point.cs" t="Include" />
           <e p="Signpost.cs" t="Include" />
         </e>

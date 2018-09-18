@@ -3,12 +3,7 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags:
-  - Signpost
-  - Destructible
-  - Usable
-  - Key
-  - Lever
+  tags: []
   layers:
   - Default
   - TransparentFX
