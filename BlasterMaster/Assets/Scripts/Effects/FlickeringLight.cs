@@ -4,14 +4,21 @@ using UnityEngine;
 
 public class FlickeringLight : MonoBehaviour {
 
+    // other object (to toggle emission)
+    // set via Inspector
+    public GameObject emissionObject;
+    public FlickeringEmission flickerScript;
+
     private int flickerTimer, flickerAt, lightOffTimer, lightOffAt;
-    //bool lightOn;
+    // bool lightOn;
     private Light light;
 
     void Start () {
         light = this.GetComponent<Light>();
         lightOffAt = 3;
         FlickerOn();
+
+        flickerScript = emissionObject.GetComponent<FlickeringEmission>();
 	}
 	
 	void Update () {
@@ -34,16 +41,20 @@ public class FlickeringLight : MonoBehaviour {
 
     void FlickerOn()
     {
-        //turn light on
+        // turn light on
         light.enabled = true;
         flickerTimer = 0;
         flickerAt = Random.Range(5, 50);
+        // turn Emission on
+        flickerScript.on = true;
     }
 
     void FlickerOff()
     {
-        //turn light off
+        // turn light off
         light.enabled = false;
         lightOffTimer = 0;
+        // turn Emission ooff
+        flickerScript.on = false;
     }
 }

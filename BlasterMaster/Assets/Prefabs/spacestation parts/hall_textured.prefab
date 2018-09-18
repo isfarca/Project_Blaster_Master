@@ -21,6 +21,7 @@ GameObject:
   - component: {fileID: 4224512592699208}
   - component: {fileID: 33578551373094524}
   - component: {fileID: 23839446430344530}
+  - component: {fileID: 64426526853042026}
   m_Layer: 0
   m_Name: Cylinder.000
   m_TagString: Untagged
@@ -38,6 +39,7 @@ GameObject:
   - component: {fileID: 4813372159897292}
   - component: {fileID: 33050550205343284}
   - component: {fileID: 23376007083917450}
+  - component: {fileID: 64141119703465974}
   m_Layer: 0
   m_Name: Base
   m_TagString: Untagged
@@ -80,7 +82,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1975732566112588}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.22, y: 11.76, z: 40.02}
+  m_LocalPosition: {x: -12.94, y: 8.02, z: 145.4}
   m_LocalScale: {x: 2, y: 2, z: 2}
   m_Children:
   - {fileID: 4813372159897292}
@@ -116,7 +118,7 @@ MeshRenderer:
   m_ReflectionProbeUsage: 1
   m_RenderingLayerMask: 4294967295
   m_Materials:
-  - {fileID: 2100000, guid: 1277fe0fe8cecaa4d81f09b8a3ed5907, type: 2}
+  - {fileID: 2100000, guid: b2ca1e07f8cadbf4da1b0e4bb1ae2f52, type: 2}
   - {fileID: 2100000, guid: 54a3ff9ee66e3d347bfb1ca713ee62a1, type: 2}
   - {fileID: 2100000, guid: b2cf24ce3ee689247adc0b9df7f8645a, type: 2}
   - {fileID: 2100000, guid: 1277fe0fe8cecaa4d81f09b8a3ed5907, type: 2}
@@ -189,4 +191,32 @@ MeshFilter:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1229078715480178}
+  m_Mesh: {fileID: 4300000, guid: 39b46d5ddea817d4bb54290a0928d884, type: 3}
+--- !u!64 &64141119703465974
+MeshCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1353489607907384}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Convex: 0
+  m_CookingOptions: 14
+  m_SkinWidth: 0.01
+  m_Mesh: {fileID: 4300002, guid: 39b46d5ddea817d4bb54290a0928d884, type: 3}
+--- !u!64 &64426526853042026
+MeshCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1229078715480178}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Convex: 0
+  m_CookingOptions: 14
+  m_SkinWidth: 0.01
   m_Mesh: {fileID: 4300000, guid: 39b46d5ddea817d4bb54290a0928d884, type: 3}

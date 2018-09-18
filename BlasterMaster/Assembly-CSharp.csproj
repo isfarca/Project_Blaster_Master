@@ -286,6 +286,7 @@
     <Compile Include="Assets\Oculus\VR\Scripts\Util\OVRScreenFade.cs" />
     <Compile Include="Assets\Oculus\VR\Scripts\Util\OVRTrackedRemote.cs" />
     <Compile Include="Assets\Oculus\VR\Scripts\Util\OVRWaitCursor.cs" />
+    <Compile Include="Assets\Scripts\Effects\FlickeringEmission.cs" />
     <Compile Include="Assets\Scripts\Effects\FlickeringLight.cs" />
     <Compile Include="Assets\Scripts\Effects\RotatingLight.cs" />
     <Compile Include="Assets\Scripts\Grabber.cs" />
