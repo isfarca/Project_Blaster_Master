@@ -290,14 +290,16 @@
     <Compile Include="Assets\Oculus\VR\Scripts\Util\OVRWaitCursor.cs" />
     <Compile Include="Assets\Scripts\Destructor.cs" />
     <Compile Include="Assets\Scripts\Door.cs" />
+    <Compile Include="Assets\Scripts\Endpoint.cs" />
     <Compile Include="Assets\Scripts\Feedback.cs" />
     <Compile Include="Assets\Scripts\Grabber.cs" />
+    <Compile Include="Assets\Scripts\Hand.cs" />
     <Compile Include="Assets\Scripts\LayDown.cs" />
     <Compile Include="Assets\Scripts\LevelLoader.cs" />
+    <Compile Include="Assets\Scripts\Lever.cs" />
     <Compile Include="Assets\Scripts\Lock.cs" />
     <Compile Include="Assets\Scripts\MainMenu.cs" />
     <Compile Include="Assets\Scripts\Movement.cs" />
-    <Compile Include="Assets\Scripts\Player.cs" />
     <Compile Include="Assets\Scripts\Point.cs" />
     <Compile Include="Assets\Scripts\Signpost.cs" />
     <None Include="Assets\Oculus\Avatar\Resources\Materials\Version1.5\Avatar_PC_SingleComponent.shader" />

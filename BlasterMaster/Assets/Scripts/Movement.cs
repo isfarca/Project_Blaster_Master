@@ -48,7 +48,6 @@ public class Movement : MonoBehaviour
         
         // Rotation in space.
         
-        /*
         // Get the stick float values.
         Vector2 leftStick = OVRInput.Get(OVRInput.Axis2D.PrimaryThumbstick);
         Vector2 rightStick = OVRInput.Get(OVRInput.Axis2D.SecondaryThumbstick);
@@ -58,9 +57,6 @@ public class Movement : MonoBehaviour
             RotatePlayer(leftStick.x, leftStick.y);
         else if (rightStick.x > 0 || rightStick.x < 0 || rightStick.y > 0 || rightStick.y < 0)
             RotatePlayer(rightStick.x, rightStick.y);
-        else if (OVRInput.Get(OVRInput.Button.PrimaryThumbstick) || OVRInput.Get(OVRInput.Button.SecondaryThumbstick))
-            transform.rotation = Quaternion.identity;
-        */
     }
 
     /// <summary>

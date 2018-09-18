@@ -34,7 +34,14 @@ public class Lock : MonoBehaviour
             return;
 
         other.GetComponent<Rigidbody>().isKinematic = true;
-        other.transform.GetChild(0).position = _offset.position;
+        other.transform.position = _offset.position;
+        other.transform.rotation = Quaternion.identity;
+        other.transform.parent = transform;
+        other.GetComponent<SphereCollider>().enabled = false;
+        other.GetComponent<OVRGrabbable>().enabled = false;
+        other.GetComponent<Grabber>().enabled = false;
+        other.transform.GetChild(0).GetComponent<BoxCollider>().enabled = false;
+        other.transform.GetChild(0).GetChild(0).gameObject.SetActive(false);
 
         _feedbackScriptLeft.Vibrate(VibrationForce.Hard);
         _feedbackScriptRight.Vibrate(VibrationForce.Hard);
