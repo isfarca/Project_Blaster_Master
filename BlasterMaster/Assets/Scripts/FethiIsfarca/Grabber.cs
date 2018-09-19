@@ -4,6 +4,7 @@ using UnityEngine.XR;
 public class Grabber : MonoBehaviour
 {
     // Declare variables.
+    private Feedback _feedbackScriptLeft, _feedbackScriptRight;
     private OVRGrabbable _pluginGrabScript;
     [SerializeField] private Transform _leftHandAnchorTransform;
     [SerializeField] private Transform _rightHandAnchorTransform;
@@ -17,6 +18,10 @@ public class Grabber : MonoBehaviour
     /// </summary>
     private void Awake()
     {
+        // Get the scripts by name in hierarchy.
+        _feedbackScriptLeft = GameObject.Find("FeedbackLeft").GetComponent<Feedback>();
+        _feedbackScriptRight = GameObject.Find("FeedbackRight").GetComponent<Feedback>();
+
         // Get the various components.
         _pluginGrabScript = GetComponent<OVRGrabbable>();
         _physic = GetComponent<Rigidbody>();
@@ -42,6 +47,12 @@ public class Grabber : MonoBehaviour
     {
         if (other.gameObject.CompareTag("Player"))
             transform.GetChild(0).GetChild(0).gameObject.SetActive(true);
+
+        // Activate the vibration by pressing hand trigger button from current hand.
+        if (OVRInput.Get(OVRInput.Button.PrimaryHandTrigger))
+            _feedbackScriptLeft.Vibrate(VibrationForce.Hard);
+        else if (OVRInput.Get(OVRInput.Button.SecondaryHandTrigger))
+            _feedbackScriptRight.Vibrate(VibrationForce.Hard);
     }
 
     /// <summary>
@@ -110,5 +121,11 @@ public class Grabber : MonoBehaviour
     {
         if (other.gameObject.CompareTag("Player"))
             transform.GetChild(0).GetChild(0).gameObject.SetActive(false);
+
+        // Activate the vibration by pressing hand trigger button from current hand.
+        if (OVRInput.Get(OVRInput.Button.PrimaryHandTrigger))
+            _feedbackScriptLeft.Vibrate(VibrationForce.Hard);
+        else if (OVRInput.Get(OVRInput.Button.SecondaryHandTrigger))
+            _feedbackScriptRight.Vibrate(VibrationForce.Hard);
     }
 }

@@ -3,7 +3,6 @@
 public class MainMenu : MonoBehaviour
 {
     // Declare variables.
-    private bool _vibrationActive, _rotationActive;
     [SerializeField] private GameObject _onOff;
     [SerializeField] private LevelLoader _levelLoaderScript;
 
@@ -12,7 +11,7 @@ public class MainMenu : MonoBehaviour
     /// </summary>
     private void Start()
     {
-        _vibrationActive = _rotationActive = true;
+        Setting.Vibration = Setting.Rotation = true;
     }
 
     /// <summary>
@@ -44,8 +43,8 @@ public class MainMenu : MonoBehaviour
     /// </summary>
     public void SetVibration()
     {
-        _vibrationActive = !_vibrationActive;
-        _onOff.gameObject.SetActive(_vibrationActive);
+        Setting.Vibration = !Setting.Vibration;
+        _onOff.gameObject.SetActive(Setting.Vibration);
     }
 
     /// <summary>
@@ -53,7 +52,7 @@ public class MainMenu : MonoBehaviour
     /// </summary>
     public void SetRotation()
     {
-        _rotationActive = !_rotationActive;
-        _onOff.gameObject.SetActive(_rotationActive);
+        Setting.Rotation = !Setting.Rotation;
+        _onOff.gameObject.SetActive(Setting.Rotation);
     }
 }

@@ -45,8 +45,10 @@ public class Movement : MonoBehaviour
         // 0.5 per cent lost movement speed.
         _moveForceLeft *= 0.995f;
         _moveForceRight *= 0.995f;
-        
+
         // Rotation in space.
+        if (!Setting.Rotation)
+            return;
         
         // Get the stick float values.
         Vector2 leftStick = OVRInput.Get(OVRInput.Axis2D.PrimaryThumbstick);

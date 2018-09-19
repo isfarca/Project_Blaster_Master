@@ -26,7 +26,7 @@ RenderSettings:
   m_AmbientIntensity: 1
   m_AmbientMode: 0
   m_SubtractiveShadowColor: {r: 0.42, g: 0.478, b: 0.627, a: 1}
-  m_SkyboxMaterial: {fileID: 2100000, guid: ec558a9a67e79cb4aaaa02201f70078d, type: 2}
+  m_SkyboxMaterial: {fileID: 2100000, guid: 860a66ca4259b384f9ec01b687f71c3c, type: 2}
   m_HaloStrength: 0.5
   m_FlareStrength: 1
   m_FlareFadeSpeed: 3
@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.014137943, g: 0.014267221, b: 0.0145895695, a: 1}
+  m_IndirectSpecularColor: {r: 0.001094268, g: 0.0011042741, b: 0.0011292236, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -339,7 +339,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3180b167bf6fdfa4685647d7b1b41ad4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _onOff: {fileID: 0}
+  _onOff: {fileID: 1648852170}
   _levelLoaderScript: {fileID: 0}
 --- !u!65 &9888783
 BoxCollider:
@@ -4183,7 +4183,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3180b167bf6fdfa4685647d7b1b41ad4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _onOff: {fileID: 0}
+  _onOff: {fileID: 567343327}
   _levelLoaderScript: {fileID: 0}
 --- !u!65 &1891589095
 BoxCollider:

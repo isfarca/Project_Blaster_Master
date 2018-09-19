@@ -70,6 +70,9 @@ public class Feedback : MonoBehaviour
     {
         // Declare variables.
         OVRHaptics.OVRHapticsChannel channel = OVRHaptics.RightChannel;
+
+        if (!Setting.Vibration)
+            return;
         
         // When you don't set the vibration hand, then vibrate the default hand (right hand).
         if (_controllerMask == OVRInput.Controller.LTouch)

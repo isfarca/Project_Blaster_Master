@@ -3,9 +3,22 @@
 public class Endpoint : MonoBehaviour
 {
     // Declare variables.
-    [SerializeField] private Light[] _lights;
+    [SerializeField] private GameObject[] _lights;
     [SerializeField] private Animator[] _doors;
     [SerializeField] private Lever _leverScript;
+
+    /// <summary>
+    /// Load default states.
+    /// </summary>
+    private void Awake()
+    {
+        // Disable lights.
+        if (_lights.Length > 0)
+        {
+            foreach (GameObject current in _lights)
+                current.SetActive(false);
+        }
+    }
 
     /// <summary>
     /// Enable sirens and open the doors.
@@ -17,13 +30,11 @@ public class Endpoint : MonoBehaviour
         if (!other.gameObject.CompareTag("Lever"))
             return;
 
-        Debug.Log("Light and Door open!");
-
         // Enable lights.
         if (_lights.Length > 0)
         {
-            foreach (Light current in _lights)
-                current.enabled = true;
+            foreach (GameObject current in _lights)
+                current.SetActive(true);
         }
 
         // Open the doors.
