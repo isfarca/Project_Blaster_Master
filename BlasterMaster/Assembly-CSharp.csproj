@@ -340,6 +340,11 @@
     <Compile Include="Assets\Scripts\AlexanderSinzig\EndingScript.cs" />
     <Compile Include="Assets\Scripts\AlexanderSinzig\GameOverMenu.cs" />
     <Compile Include="Assets\Scripts\AlexanderSinzig\TurnOffEmission.cs" />
+    <Compile Include="Assets\Scripts\BackToMainMenu.cs" />
+    <Compile Include="Assets\Scripts\Effects\FlickeringEmission.cs" />
+    <Compile Include="Assets\Scripts\Effects\FlickeringLight.cs" />
+    <Compile Include="Assets\Scripts\Effects\RotatingLight.cs" />
+    <Compile Include="Assets\Scripts\EndingScript.cs" />
     <Compile Include="Assets\Scripts\FethiIsfarca\Destructor.cs" />
     <Compile Include="Assets\Scripts\FethiIsfarca\Door.cs" />
     <Compile Include="Assets\Scripts\FethiIsfarca\Endpoint.cs" />
@@ -355,6 +360,10 @@
     <Compile Include="Assets\Scripts\FethiIsfarca\Point.cs" />
     <Compile Include="Assets\Scripts\FethiIsfarca\Setting.cs" />
     <Compile Include="Assets\Scripts\FethiIsfarca\Signpost.cs" />
+    <Compile Include="Assets\Scripts\GameOverMenu.cs" />
+    <Compile Include="Assets\Scripts\Grabber.cs" />
+    <Compile Include="Assets\Scripts\Jetpack.cs" />
+    <Compile Include="Assets\Scripts\TurnOffEmission.cs" />
     <None Include="Assets\PostProcessing\Resources\Shaders\DepthOfField.shader" />
     <None Include="Assets\Oculus\Avatar\Resources\Materials\Version1.5\Avatar_PC_SingleComponent.shader" />
     <None Include="Assets\PostProcessing\Resources\Shaders\MotionBlur.cginc" />
@@ -421,10 +430,10 @@
     <None Include="Assets\PostProcessing\Editor Resources\Monitors\WaveformCompute.compute" />
     <None Include="Assets\Oculus\VR\Plugins\placeholder.txt" />
     <Reference Include="UnityEditor.StandardEvents">
-      <HintPath>C:/Users/Fethi.Isfarca/Desktop/BlasterMaster/Library/ScriptAssemblies/UnityEditor.StandardEvents.dll</HintPath>
+      <HintPath>C:/Users/Alexander.Sinzig/Desktop/Project_Blaster_Master/BlasterMaster/Library/ScriptAssemblies/UnityEditor.StandardEvents.dll</HintPath>
     </Reference>
     <Reference Include="Unity.PackageManagerUI.Editor">
-      <HintPath>C:/Users/Fethi.Isfarca/Desktop/BlasterMaster/Library/ScriptAssemblies/Unity.PackageManagerUI.Editor.dll</HintPath>
+      <HintPath>C:/Users/Alexander.Sinzig/Desktop/Project_Blaster_Master/BlasterMaster/Library/ScriptAssemblies/Unity.PackageManagerUI.Editor.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.AIModule">
       <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.AIModule.dll</HintPath>
@@ -601,7 +610,7 @@
       <HintPath>C:/Program Files/Unity/Editor/Data/Managed/Unity.Locator.dll</HintPath>
     </Reference>
     <Reference Include="Facebook.Unity.Settings">
-      <HintPath>C:/Users/Fethi.Isfarca/Desktop/BlasterMaster/Library/FacebookSDK/Facebook.Unity.Settings.dll</HintPath>
+      <HintPath>C:/Users/Alexander.Sinzig/Desktop/Project_Blaster_Master/BlasterMaster/Library/FacebookSDK/Facebook.Unity.Settings.dll</HintPath>
     </Reference>
     <Reference Include="Vuforia.UnityExtensions">
       <HintPath>C:/Program Files/Unity/Editor/Data/PlaybackEngines/VuforiaSupport/Managed/Runtime/Vuforia.UnityExtensions.dll</HintPath>
@@ -627,14 +636,17 @@
     <Reference Include="UnityEngine.SpatialTracking">
       <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/UnitySpatialTracking/RuntimeEditor/UnityEngine.SpatialTracking.dll</HintPath>
     </Reference>
+    <Reference Include="Substance.Game">
+      <HintPath>C:/Users/Alexander.Sinzig/Desktop/Project_Blaster_Master/BlasterMaster/Assets/Plugins/Substance.Game.dll</HintPath>
+    </Reference>
     <Reference Include="UnityEngine.Analytics">
-      <HintPath>C:/Users/Fethi.Isfarca/AppData/Local/Unity/cache/packages/packages.unity.com/com.unity.analytics@2.0.16/UnityEngine.Analytics.dll</HintPath>
+      <HintPath>C:/Users/Alexander.Sinzig/AppData/Local/Unity/cache/packages/packages.unity.com/com.unity.analytics@2.0.16/UnityEngine.Analytics.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.Purchasing">
-      <HintPath>C:/Users/Fethi.Isfarca/AppData/Local/Unity/cache/packages/packages.unity.com/com.unity.purchasing@2.0.1/UnityEngine.Purchasing.dll</HintPath>
+      <HintPath>C:/Users/Alexander.Sinzig/AppData/Local/Unity/cache/packages/packages.unity.com/com.unity.purchasing@2.0.1/UnityEngine.Purchasing.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.StandardEvents">
-      <HintPath>C:/Users/Fethi.Isfarca/AppData/Local/Unity/cache/packages/packages.unity.com/com.unity.standardevents@1.0.13/UnityEngine.StandardEvents.dll</HintPath>
+      <HintPath>C:/Users/Alexander.Sinzig/AppData/Local/Unity/cache/packages/packages.unity.com/com.unity.standardevents@1.0.13/UnityEngine.StandardEvents.dll</HintPath>
     </Reference>
     <Reference Include="mscorlib">
       <HintPath>C:/Program Files/Unity/Editor/Data/MonoBleedingEdge/lib/mono/unity/mscorlib.dll</HintPath>
